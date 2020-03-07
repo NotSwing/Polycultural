@@ -9,8 +9,6 @@
     height: 80px;
     line-height: 80px;
     background:#333; 
-    
- 
 }
 
 .logo{
@@ -46,6 +44,7 @@
 background: whitesmoke;
   color:#f7c08a;
 }
+/* sponsers */
 #Sponsers{
     width: 100%;
 }
