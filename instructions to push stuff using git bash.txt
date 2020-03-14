@@ -1,0 +1,6 @@
+change directory to folder
+git init
+git add .
+git commit -m "Blake2"    //The number will increment each time.... your next push should be Blake3
+git push -u origin master
+git push
