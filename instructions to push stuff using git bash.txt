@@ -1,6 +1,18 @@
+//GIT PUSH
 change directory to folder
 git init
 git add .
 git commit -m "Blake2"    //The number will increment each time.... your next push should be Blake3
 git push -u origin master
 git push
+
+//GIT CLONE
+change directory to desktop
+ git init 
+git clone "https://github.com/NotSwing/Polycultural"
+
+
+//GIT PULL and GIT FETCH
+change directroy to folder 
+git init
+git pull --all
