@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <style>
-        .BtnCollapisble {
+        .clicked{
             background-color: #8fb7a5;
             color: #FFF;
             cursor: pointer;
@@ -19,37 +19,49 @@
             transition: 0.4s;
             font: 20px Lato, sans-serif;
         }
- 
-        /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-        .active,
-        .BtnCollapisble:hover {
-            background-color: #527e6a;
-        }
- 
-        /* Style the collapse panel. Note: hidden by default */
-        .panel {
-            padding: 0 18px;
-            background-color: white;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.2s ease-out;
-        }
- 
         p {
             font: 16px Lato, sans-serif;
         }
- 
-        .BtnCollapisble:after {
-            content: '\02795';
-            /* Unicode character for "plus" sign (+) */
-            font-size: 13px;
-            float: right;
-            margin-left: 5px;
+        .sidebar{
+            width:20%;
+            float:left;
         }
- 
-        .active:after {
-            content: "\2796";
-            /* Unicode character for "minus" sign (-) */
+        .contents{
+            width:80%;
+            float:right;
+        }
+        .active, .accordion:hover{
+            background-color: #527e6a;
+        }
+        .accordion:after{
+            float: right;
+            content: '\02795';
+        }
+        .active:after{
+            float: right;
+            content: '\2796';
+        }
+        .accordion{
+            background-color: #8fb7a5;
+            color: #FFF;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            text-align: left;
+            border: 1px solid white;
+            outline: none;
+            transition: 0.4s;
+            font: 20px Lato, sans-serif;
+        }
+        .collapses{
+            display:none;
+            background-color: white;
+            overflow:hidden;
+            transition: max-height 0.2s ease-out;
+        }
+        .vis{
+            display:block;
+            background-color: white;
         }
     </style>
 </head>
@@ -65,100 +77,95 @@
         
             <div class="navbarlinks">
                 <ul class = "menu">
-                    <li><a href="#">Who We Are</a></li>
-                    <li><a href="#History">History</a></li>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#Careers">Careers</a></li>
-                    <li><a href="#VolunteerOpportunites">Volunteer Opportunites</a></li>                
-                    <li><a href="#TestimonialsAndSuccesses">Testimonials and Successes</a></li>                  
+                    <li><a href="whoWeAre.html">Who We Are</a></li>
+                    <li><a onclick="toggleVis('hist')" href="#">History</a></li>
+                    <li><a onclick="toggleVis('abtPanel'); toggleVis('abtPanel1')" href="#">About</a></li>
+                    <li><a onclick="toggleVis('car')" href="#">Careers</a></li>
+                    <li><a onclick="toggleVis('vol')" href="#">Volunteer Opportunites</a></li>                
+                    <li><a onclick="toggleVis('tos')" href="#">Testimonials and Successes</a></li>                  
                 </ul>    
             </div>    
         </nav>
     </header>
 
 <!--This is the content for the Who We Are page.-->
-<section class  = "CollapsibleSection">
-    <!--History-->
-    <button type="button" class="BtnCollapisble">History</button>
-        <div class="panel">
-            <h1>Growing with Canada</h1>
-            <p>Polycultural Immigrant and Community Services was incorporated on February 3, 1993 as a result of a 
-                merger between two agencies: Polish Immigrant Aid Services (founded in 1973) and Polish Canadian 
-                Community Services (founded in 1982). Amalgamation was completed in January 1994 with the purpose 
-                of providing a broader range of services while avoiding duplication. On August 27, 2000 the 
-                organization name was changed to Polycultural Immigrant and Community Services to better reflect 
-                local communities served by the organization.</p>
-        </div>
+<div id="boddy" class="boddyclass">
+<div class="sidebar">
+    <button id="btn1" type="button" class="accordion" onclick="toggleVis(id,'hist')">History</button>
+    <button id="btn2" type="button" class="accordion" onclick="toggleVis(id,'abtPanel'); document.getElementById(id).classList.toggle('active');  toggleVis(id,'abtPanel1')">About</button>
+    <div id="abtPanel" class="collapses">
+        <button id="btn3" type="button" class="accordion" onclick="toggleVis(id,'bod')">Board Of Directors</button>
+        <button id="btn4" type="button" class="accordion" onclick="toggleVis(id,'sm')">Senior Management</button>
+        <button id="btn5" type="button" class="accordion" onclick="toggleVis(id,'ar')">Annual Reports</button>
+    </div>
+    <button id="btn6" type="button" class="accordion" onclick="toggleVis(id,'car')">Careers</button>
+    <button id="btn7" type="button" class="accordion" onclick="toggleVis(id,'vol')">Volunteer Opportunites</button>
+    <button id="btn8" type="button" class="accordion" onclick="toggleVis(id,'tos')">Testimonials and Successes</button>
+    
+</div>
 
-        <!--About-->
-        <button type="button" class="BtnCollapisble">About</button>
-            <div class="panel">
 
-                <p>Much like the rich fabric that is Canadian culture, our Polycultural family reflects 
-                    the cultural, ethnic and linguistic diversity of  the communities we serve. We are 
-                    dedicated to maintaining an open, inclusive and welcoming environment for all. 
-                </p>
+<div id="mainish" class="contents">
+    <div id="hist" class="collapses">
+        <h1>Growing with Canada</h1>
+        <p>Polycultural Immigrant and Community Services was incorporated on February 3, 1993 as a result of a 
+            merger between two agencies: Polish Immigrant Aid Services (founded in 1973) and Polish Canadian 
+            Community Services (founded in 1982). Amalgamation was completed in January 1994 with the purpose 
+            of providing a broader range of services while avoiding duplication. On August 27, 2000 the 
+            organization name was changed to Polycultural Immigrant and Community Services to better reflect 
+            local communities served by the organization.</p><hr>
+    </div>
+    <div id="abtPanel1" class="collapses">
+        <p>Much like the rich fabric that is Canadian culture, our Polycultural family reflects 
+            the cultural, ethnic and linguistic diversity of  the communities we serve. We are 
+            dedicated to maintaining an open, inclusive and welcoming environment for all. 
+        </p><hr>
+    </div>
+    <div id="bod" class="collapses">
+        <h4>Adam Altmid
+            Chairman Adam
+        </h4>
+        <p>Altmid has been practicing law in Toronto since his call to the bar in 1996.
+             Prior to studding law at Osgoode Hall Law School, Adam received a Bachelor 
+             of Business Management Degree from Ryerson University. Adam is committed to 
+             charitable work and has been involved with the Board of Polycultural Immigrant 
+             and Community Services in various capacities since 1999.	</p><hr>
+    </div>
+    <div id="sm" class="collapses">
+        <h3>Executive Director</h3>
 
-                <!--BOD-->
-                <button type="button" class="BtnCollapisble">Board Of Directors</button>
-                <div class="panel">
-                    <header>Adam Altmid
-                        Chairman Adam
-                    </header>
-                    <p>Altmid has been practicing law in Toronto since his call to the bar in 1996.
-                         Prior to studding law at Osgoode Hall Law School, Adam received a Bachelor 
-                         of Business Management Degree from Ryerson University. Adam is committed to 
-                         charitable work and has been involved with the Board of Polycultural Immigrant 
-                         and Community Services in various capacities since 1999.	</p>
-                </div>
-                <!--SM-->
-                <button type="button" class="BtnCollapisble">Senior Management</button>
-                <div class="panel">
-                    <header>Marwan Ismail</header>
-                    <h3>Executive Director</h3>
+        <p>Marwan's role as Executive Director is to work with the board of directors to 
+            develop and plan all aspects of Polycultural's operations. Marwan's more than 
+            12 years of leadership experience ranges from corporate social responsibility 
+            and sustainability, project/program management, strategic business planning, 
+            policy development and change management, to communications, marketing and fundraising.</p><hr>
+    </div>
+    <div id="ar" class="collapses">
+        <p>pictures of books about annual reports.</p><hr>
+    </div>
+    <div id="car" class="collapses">
+        <h1>Build Your Career at Polycultural Immigrant and Community Services</h1>
 
-                    <p>Marwan's role as Executive Director is to work with the board of directors to 
-                        develop and plan all aspects of Polycultural's operations. Marwan's more than 
-                        12 years of leadership experience ranges from corporate social responsibility 
-                        and sustainability, project/program management, strategic business planning, 
-                        policy development and change management, to communications, marketing and fundraising.</p>
-                </div>
-                <!--AR-->
-                <button type="button" class="BtnCollapisble">Annual Reports</button>
-                <div class="panel">
-                    
-                </div>
+        <p>Working at Polycultural  is a meaningful and rewarding experience - it really is 
+            not just another job. We offer a friendly working environment across our 7 locations. 
+            As part of your work, you constantly interact with people who are new to Canada; 
+            these are people who are determined, motivated and driven to succeed while preparing 
+            to capture new opportunities. </p><hr>
+    </div>
+    <div id="vol" class="collapses">
+        <p>Our volunteers contribute many hours assisting Polycultural achieve its service goals 
+            and fulfill its mission and vision.Volunteering is more than just sharing time and energy,
+             it’s about the satisfaction of knowing you are assisting the community to become stronger,
+              giving back and gaining valuable experiences.</p><hr>
+    </div>
+    <div id="tos" class="collapses">
+        <h3>Enhanced Language Training (ELT) Reviews</h3>
+        <p>"ELT was an enriching experience as a newcomer. It gave me a broad view of life in Canada 
+            and best of all I was able to get my first job in Canada via the placement services." - Ben M. </p><hr>
+    </div>
+</div>
+</div>
 
-            </div>
-            <!--Careers-->
-            <button type="button" class="BtnCollapisble">Careers</button>
-                <div class="panel">
-                    <h1>Build Your Career at Polycultural Immigrant and Community Services</h1>
-
-                    <p>Working at Polycultural  is a meaningful and rewarding experience - it really is 
-                        not just another job. We offer a friendly working environment across our 7 locations. 
-                        As part of your work, you constantly interact with people who are new to Canada; 
-                        these are people who are determined, motivated and driven to succeed while preparing 
-                        to capture new opportunities. </p>
-                </div>
-            <!--VO-->
-            <button type="button" class="BtnCollapisble">Voluteer Opportunites</button>
-                <div class="panel">
-                    <p>Our volunteers contribute many hours assisting Polycultural achieve its service goals 
-                        and fulfill its mission and vision.Volunteering is more than just sharing time and energy,
-                         it’s about the satisfaction of knowing you are assisting the community to become stronger,
-                          giving back and gaining valuable experiences.</p>
-                </div>
-
-            <!--TOS-->
-            <button type="button" class="BtnCollapisble">Testimonials and Successes</button>
-                <div class="panel">
-                    <h3>Enhanced Language Training (ELT) Reviews</h3>
-                    <p>"ELT was an enriching experience as a newcomer. It gave me a broad view of life in Canada 
-                        and best of all I was able to get my first job in Canada via the placement services." - Ben M. </p>
-                </div>
-   
-</section>
 <footer>
     <div class="containerFooter">
         <div class="leftCol">
@@ -190,23 +197,31 @@
     </div>
 </footer>
     <script type="text/javascript">
-        var acc = document.getElementsByClassName("BtnCollapisble");
-        var i;
- 
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.maxHeight) {
-                    panel.style.maxHeight = null;
-                } else {
-                    panel.style.maxHeight = panel.scrollHeight + "px";
-                }
-            });
-        }
-    </script>
-    </script>
-</body>
+        
+        function toggleVis(id, abc){
+            var pop = document.getElementById(id);
+            pop.classList.toggle("active");
+            if(id=='btn2' && pop.classList.toggle("active")==false){
+                document.getElementById('btn3').classList.remove("active");
+                document.getElementById('btn4').classList.remove("active");
+                document.getElementById('btn5').classList.remove("active");
+            }
+            var z = document.getElementById(abc);
 
+            if(z.className == 'collapses'){
+                z.className = 'vis';
+            } else {
+                z.className = 'collapses';
+            }
+            if(z.id == 'abtPanel' && z.className == 'collapses'){
+                document.getElementById('bod').className = 'collapses';
+                document.getElementById('sm').className = 'collapses';
+                document.getElementById('ar').className = 'collapses';
+            }
+        }
+
+    </script>
+
+</body>
 
 </html>
