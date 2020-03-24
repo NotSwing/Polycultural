@@ -7,18 +7,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <style>
-        .clicked{
-            background-color: #8fb7a5;
-            color: #FFF;
-            cursor: pointer;
-            padding: 18px;
-            width: 100%;
-            text-align: left;
-            border: 1px solid white;
-            outline: none;
-            transition: 0.4s;
-            font: 20px Lato, sans-serif;
-        }
+        
         p {
             font: 16px Lato, sans-serif;
         }
@@ -74,15 +63,14 @@
             <a href="index.html"><img id="logoImage" src="Logo.png" class="logo"></a></div>
         </div>
     <nav class="navbar">
-        
             <div class="navbarlinks">
                 <ul class = "menu">
                     <li><a href="whoWeAre.html">Who We Are</a></li>
-                    <li><a onclick="toggleVis('hist')" href="#">History</a></li>
-                    <li><a onclick="toggleVis('abtPanel'); toggleVis('abtPanel1')" href="#">About</a></li>
-                    <li><a onclick="toggleVis('car')" href="#">Careers</a></li>
-                    <li><a onclick="toggleVis('vol')" href="#">Volunteer Opportunites</a></li>                
-                    <li><a onclick="toggleVis('tos')" href="#">Testimonials and Successes</a></li>                  
+                    <li><a onclick="toggleVis('btn1','hist'); document.getElementById('btn1').classList.toggle('active')" href="#">History</a></li>
+                    <li><a onclick="toggleVis('btn2','abtPanel'); toggleVis('btn2','abtPanel1'); document.getElementById('btn2').classList.toggle('active')" href="#">About</a></li>
+                    <li><a onclick="toggleVis('btn6','car'); document.getElementById('btn6').classList.toggle('active')" href="#">Careers</a></li>
+                    <li><a onclick="toggleVis('btn7','vol'); document.getElementById('btn7').classList.toggle('active');" href="#">Volunteer Opportunites</a></li>                
+                    <li><a onclick="toggleVis('btn8','tos'); document.getElementById('btn8').classList.toggle('active');" href="#">Testimonials and Successes</a></li>                  
                 </ul>    
             </div>    
         </nav>
@@ -91,19 +79,17 @@
 <!--This is the content for the Who We Are page.-->
 <div id="boddy" class="boddyclass">
 <div class="sidebar">
-    <button id="btn1" type="button" class="accordion" onclick="toggleVis(id,'hist')">History</button>
-    <button id="btn2" type="button" class="accordion" onclick="toggleVis(id,'abtPanel'); document.getElementById(id).classList.toggle('active');  toggleVis(id,'abtPanel1')">About</button>
+    <button id="btn1" type="button" class="accordion" onclick="toggleVis(id,'hist'); document.getElementById(id).classList.toggle('active')">History</button>
+    <button id="btn2" type="button" class="accordion" onclick="toggleVis(id,'abtPanel'); toggleVis(id,'abtPanel1'); document.getElementById(id).classList.toggle('active')">About</button>
     <div id="abtPanel" class="collapses">
-        <button id="btn3" type="button" class="accordion" onclick="toggleVis(id,'bod')">Board Of Directors</button>
-        <button id="btn4" type="button" class="accordion" onclick="toggleVis(id,'sm')">Senior Management</button>
-        <button id="btn5" type="button" class="accordion" onclick="toggleVis(id,'ar')">Annual Reports</button>
+        <button id="btn3" type="button" class="accordion" onclick="toggleVis(id,'bod'); document.getElementById(id).classList.toggle('active')">Board Of Directors</button>
+        <button id="btn4" type="button" class="accordion" onclick="toggleVis(id,'sm'); document.getElementById(id).classList.toggle('active')">Senior Management</button>
+        <button id="btn5" type="button" class="accordion" onclick="toggleVis(id,'ar'); document.getElementById(id).classList.toggle('active')">Annual Reports</button>
     </div>
-    <button id="btn6" type="button" class="accordion" onclick="toggleVis(id,'car')">Careers</button>
-    <button id="btn7" type="button" class="accordion" onclick="toggleVis(id,'vol')">Volunteer Opportunites</button>
-    <button id="btn8" type="button" class="accordion" onclick="toggleVis(id,'tos')">Testimonials and Successes</button>
-    
+    <button id="btn6" type="button" class="accordion" onclick="toggleVis(id,'car'); document.getElementById(id).classList.toggle('active')">Careers</button>
+    <button id="btn7" type="button" class="accordion" onclick="toggleVis(id,'vol'); document.getElementById(id).classList.toggle('active')">Volunteer Opportunites</button>
+    <button id="btn8" type="button" class="accordion" onclick="toggleVis(id,'tos'); document.getElementById(id).classList.toggle('active')">Testimonials and Successes</button>
 </div>
-
 
 <div id="mainish" class="contents">
     <div id="hist" class="collapses">
@@ -123,8 +109,7 @@
     </div>
     <div id="bod" class="collapses">
         <h4>Adam Altmid
-            Chairman Adam
-        </h4>
+            Chairman Adam</h4>
         <p>Altmid has been practicing law in Toronto since his call to the bar in 1996.
              Prior to studding law at Osgoode Hall Law School, Adam received a Bachelor 
              of Business Management Degree from Ryerson University. Adam is committed to 
@@ -133,7 +118,6 @@
     </div>
     <div id="sm" class="collapses">
         <h3>Executive Director</h3>
-
         <p>Marwan's role as Executive Director is to work with the board of directors to 
             develop and plan all aspects of Polycultural's operations. Marwan's more than 
             12 years of leadership experience ranges from corporate social responsibility 
@@ -145,7 +129,6 @@
     </div>
     <div id="car" class="collapses">
         <h1>Build Your Career at Polycultural Immigrant and Community Services</h1>
-
         <p>Working at Polycultural  is a meaningful and rewarding experience - it really is 
             not just another job. We offer a friendly working environment across our 7 locations. 
             As part of your work, you constantly interact with people who are new to Canada; 
@@ -197,15 +180,14 @@
     </div>
 </footer>
     <script type="text/javascript">
-        
         function toggleVis(id, abc){
-            var pop = document.getElementById(id);
-            pop.classList.toggle("active");
-            if(id=='btn2' && pop.classList.toggle("active")==false){
+            
+            if(id=='btn2' && document.getElementById(id).classList.toggle("active")==false){
                 document.getElementById('btn3').classList.remove("active");
                 document.getElementById('btn4').classList.remove("active");
                 document.getElementById('btn5').classList.remove("active");
             }
+
             var z = document.getElementById(abc);
 
             if(z.className == 'collapses'){
@@ -219,9 +201,6 @@
                 document.getElementById('ar').className = 'collapses';
             }
         }
-
     </script>
-
 </body>
-
 </html>
