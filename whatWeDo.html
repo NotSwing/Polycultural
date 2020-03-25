@@ -116,15 +116,15 @@
                 <ul class = "menu">
                     <li><a href="whatWeDo.html">What We Do</a></li>
                     <li><a onclick="toggleVis('btn1','btn1Panel'); toggleVis('btn1','langP');document.getElementById('btn1').classList.toggle('active')" href="#">Language Programs</a></li>
-                    <li><a onclick="document.getElementById('btn2').classList.toggle('active'); " href="#">Connecting to Community</a></li>
-                    <li><a onclick="document.getElementById('btn3').classList.toggle('active'); " href="#">Youth Services</a></li>
-                    <li><a onclick="document.getElementById('btn4').classList.toggle('active'); " href="#">Resettlement and Refugees Services</a></li>                
-                    <li><a onclick="document.getElementById('btn5').classList.toggle('active'); " href="#">Services for Seniors</a></li>
-                    <li><a onclick="document.getElementById('btn6').classList.toggle('active'); " href="#">Family Violence and Addiction</a></li>
-                    <li><a onclick="document.getElementById('btn7').classList.toggle('active'); " href="#">Health and Wellness</a></li>
-                    <li><a onclick="document.getElementById('btn8').classList.toggle('active'); " href="#">Commissioner Services</a></li>
-                    <li><a onclick="document.getElementById('btn9').classList.toggle('active'); " href="#">Settlement Counselling</a></li>
-                    <li><a onclick="document.getElementById('btn10').classList.toggle('active'); " href="#">Transition to Employment</a></li>            
+                    <li><a onclick="toggleVis('btn2','btn2Panel'); toggleVis('btn2','conCom'); document.getElementById('btn2').classList.toggle('active'); " href="#">Connecting to Community</a></li>
+                    <li><a onclick="toggleVis('btn3','btn3Panel'); toogleVis('btn3', 'youthS'); document.getElementById('btn3').classList.toggle('active'); " href="#">Youth Services</a></li>
+                    <li><a onclick="toggleVis(id,'resettle'); document.getElementById('btn4').classList.toggle('active'); " href="#">Resettlement and Refugees Services</a></li>                
+                    <li><a onclick="toggleVis(id,'service'); toggleVis(id,'btn5Panel'); document.getElementById('btn5').classList.toggle('active'); " href="#">Services for Seniors</a></li>
+                    <li><a onclick="toggleVis(id,'famVA'); toggleVis(id,'btn6Panel');  document.getElementById('btn6').classList.toggle('active'); " href="#">Family Violence and Addiction</a></li>
+                    <li><a onclick="toggleVis(id,'health'); toggleVis(id,'btn7Panel');  document.getElementById('btn7').classList.toggle('active'); " href="#">Health and Wellness</a></li>
+                    <li><a onclick="toggleVis(id,'comser'); document.getElementById('btn8').classList.toggle('active'); " href="#">Commissioner Services</a></li>
+                    <li><a onclick="toggleVis(id,'settle'); toggleVis(id,'btn9Panel'); document.getElementById('btn9').classList.toggle('active'); " href="#">Settlement Counselling</a></li>
+                    <li><a onclick="toggleVis(id,'trans'); toggleVis(id,'btn10Panel'); document.getElementById('btn10').classList.toggle('active'); " href="#">Transition to Employment</a></li>            
                 </ul>    
             </div>    
         </nav>
@@ -133,37 +133,37 @@
 <!--This is the content for the What We Do page.-->
 <div id="mainContainer" class="mainContainer">
     <div class="sidebar">
-        <button id="btn1" type="button" name="panel1" class="accordion" onclick="toggleVis(id,'panel1sub'); toggleVis(id,'langP'); document.getElementById(id).classList.toggle('active');">Language Programs</button>
-            <div id="panel1sub" class="collapses">
-                <button id="btn1a" type="button" name="panel1sub" class="accordion" onclick="toggleVis(id,'langls'); document.getElementById(id).classList.toggle('active'); ">Language Learning Skills Development(LLSD)</button>
-                <button id="btn1b" type="button" name="panel1sub" class="accordion" onclick="toggleVis(id,'enhlt'); document.getElementById(id).classList.toggle('active'); ">Enhanced Language Training(ELT)</button>
-                <button id="btn1c" type="button" name="panel1sub" class="accordion" onclick="toggleVis(id,'oesl'); document.getElementById(id).classList.toggle('active'); ">Online ESL</button>
+        <button id="btn1" type="button" class="accordion" onclick="toggleVis(id,'btn1Panel'); toggleVis(id,'langP'); document.getElementById(id).classList.toggle('active');">Language Programs</button>
+            <div id="btn1Panel" class="collapses">
+                <button id="btn1a" type="button" class="accordion" onclick="toggleVis(id,'langls'); document.getElementById(id).classList.toggle('active')">Language Learning Skills Development(LLSD)</button>
+                <button id="btn1b" type="button" class="accordion" onclick="toggleVis(id,'enhlt'); document.getElementById(id).classList.toggle('active')">Enhanced Language Training(ELT)</button>
+                <button id="btn1c" type="button" class="accordion" onclick="toggleVis(id,'oesl'); document.getElementById(id).classList.toggle('active')">Online ESL</button>
             </div>
-        <button id="btn2" type="button" name="panel2" class="accordion" onclick="toggleVis(id,'btn2Panel'); toggleVis(id,'conCom');document.getElementById(id).classList.toggle('active'); ">Connecting to Community</button>
+        <button id="btn2" type="button" class="accordion" onclick="toggleVis(id,'btn2Panel'); toggleVis(id,'conCom');document.getElementById(id).classList.toggle('active'); ">Connecting to Community</button>
             <div id="btn2Panel" class="collapses">
-                <button id="btn2a" type="button" name="panel2sub" class="accordion" onclick="document.getElementById(id).classList.toggle('active'); ">Settlement Workers in School</button>
-                <button id="btn2b" type="button" name="panel2sub" class="accordion" onclick="document.getElementById(id).classList.toggle('active'); ">International Medical Graduates</button>
+                <button id="btn2a" type="button" class="accordion" onclick="toggleVis(id,'setwork'); document.getElementById(id).classList.toggle('active'); ">Settlement Workers in School</button>
+                <button id="btn2b" type="button" class="accordion" onclick="toggleVis(id,'intermed'); document.getElementById(id).classList.toggle('active'); ">International Medical Graduates</button>
             </div>
-        <button id="btn3" type="button" name="panel3" class="accordion" onclick="toggleVis(id,'youthS'); toogleVis(id, 'btn3Panel');document.getElementById(id).classList.toggle('active'); ">Youth Services</button>
+        <button id="btn3" type="button" class="accordion" onclick="toggleVis(id,'btn3Panel'); toogleVis(id,'youth'); document.getElementById(id).classList.toggle('active'); ">Youth Services</button>
             <div id="btn3Panel" class="collapses">
-                <button id="btn3a" type="button" name="panel3sub" class="accordion" onclick="toggleVis(id,'youthjob'); document.getElementById(id).classList.toggle('active'); ">Youth Job Connection</button>
-                <button id="btn3b" type="button" name="panel3sub" class="accordion" onclick="toggleVis(id,'youthjobS'); document.getElementById(id).classList.toggle('active'); ">Youth Job Connection(YJC) Summer</button>
-                <button id="btn3c" type="button" name="panel3sub" class="accordion" onclick=" toggleVis(id,'youthach'); document.getElementById(id).classList.toggle('active'); ">Youth Achievers Programs</button>
-                <button id="btn3d" type="button" name="panel3sub" class="accordion" onclick="toggleVis(id,'beaut'); document.getElementById(id).classList.toggle('active'); ">Beautiful Girls</button>
-                <button id="btn3e" type="button" name="panel3sub" class="accordion" onclick="toggleVis(id,'hwclub'); document.getElementById(id).classList.toggle('active'); ">The Homework Club</button>
-                <button id="btn3f" type="button" name="panel3sub" class="accordion" onclick="toggleVis(id,'youthb2b'); document.getElementById(id).classList.toggle('active'); ">Youth B2B Project</button>
+                <button id="btn3a" type="button" class="accordion" onclick="toggleVis(id,'youthjob'); document.getElementById(id).classList.toggle('active'); ">Youth Job Connection</button>
+                <button id="btn3b" type="button" class="accordion" onclick="toggleVis(id,'youthjobS'); document.getElementById(id).classList.toggle('active'); ">Youth Job Connection(YJC) Summer</button>
+                <button id="btn3c" type="button" class="accordion" onclick=" toggleVis(id,'youthach'); document.getElementById(id).classList.toggle('active'); ">Youth Achievers Programs</button>
+                <button id="btn3d" type="button" class="accordion" onclick="toggleVis(id,'beaut'); document.getElementById(id).classList.toggle('active'); ">Beautiful Girls</button>
+                <button id="btn3e" type="button" class="accordion" onclick="toggleVis(id,'hwclub'); document.getElementById(id).classList.toggle('active'); ">The Homework Club</button>
+                <button id="btn3f" type="button" class="accordion" onclick="toggleVis(id,'youthb2b'); document.getElementById(id).classList.toggle('active'); ">Youth B2B Project</button>
             </div>
         <button id="btn4" type="button" class="accordion" onclick="toggleVis(id,'resettle'); document.getElementById(id).classList.toggle('active'); ">Resettlement and Refugees Services</button>
-        <button id="btn5" type="button" name="panel5" class="accordion" onclick="toggleVis(id,'service'); toggleVis(id,'btn5Panel'); document.getElementById(id).classList.toggle('active'); ">Services for Seniors</button>
+        <button id="btn5" type="button" class="accordion" onclick="toggleVis(id,'service'); toggleVis(id,'btn5Panel'); document.getElementById(id).classList.toggle('active'); ">Services for Seniors</button>
             <div id="btn5Panel" class="collapses">
-                <button id="btn5a" type="button" name="panel5sub" class="accordion" onclick="toggleVis(id,'postdis'); document.getElementById(id).classList.toggle('active'); ">Post Discharge Project</button>
-                <button id="btn5b" type="button" name="panel5sub" class="accordion" onclick="toggleVis(id,'newhor'); document.getElementById(id).classList.toggle('active'); ">New Horizons for Senior Programs</button>
+                <button id="btn5a" type="button" class="accordion" onclick="toggleVis(id,'postdis'); document.getElementById(id).classList.toggle('active'); ">Post Discharge Project</button>
+                <button id="btn5b" type="button" class="accordion" onclick="toggleVis(id,'newhor'); document.getElementById(id).classList.toggle('active'); ">New Horizons for Senior Programs</button>
             </div>
-        <button id="btn6" type="button" name="panel6" class="accordion" onclick="toggleVis(id,'famVA'); toggleVis(id,'btn6Panel'); document.getElementById(id).classList.toggle('active'); ">Family Violence and Addiction</button>
+        <button id="btn6" type="button" class="accordion" onclick="toggleVis(id,'famVA'); toggleVis(id,'btn6Panel'); document.getElementById(id).classList.toggle('active'); ">Family Violence and Addiction</button>
             <div id="btn6Panel" class="collapses">
-                <button id="btn6a" type="button" name="panel6sub" class="accordion" onclick="toggleVis(id,'famsup'); document.getElementById(id).classList.toggle('active'); ">Family Support Program</button>
-                <button id="btn6b" type="button" name="panel6sub" class="accordion" onclick="toggleVis(id,'partas'); document.getElementById(id).classList.toggle('active'); ">Partners Assult Responce Program(PAR)</button>
-                <button id="btn6c" type="button" name="panel6sub" class="accordion" onclick="toggleVis(id,'probgam'); document.getElementById(id).classList.toggle('active'); ">Problem Gambling Counseling</button>
+                <button id="btn6a" type="button" class="accordion" onclick="toggleVis(id,'famsup'); document.getElementById(id).classList.toggle('active'); ">Family Support Program</button>
+                <button id="btn6b" type="button" class="accordion" onclick="toggleVis(id,'partas'); document.getElementById(id).classList.toggle('active'); ">Partners Assult Responce Program(PAR)</button>
+                <button id="btn6c" type="button" class="accordion" onclick="toggleVis(id,'probgam'); document.getElementById(id).classList.toggle('active'); ">Problem Gambling Counseling</button>
             </div>
         <button id="btn7" type="button" name="panel7" class="accordion" onclick="toggleVis(id,'health'); toggleVis(id,'btn7Panel'); document.getElementById(id).classList.toggle('active'); ">Health and Wellness</button>
             <div id="btn7Panel" class="collapses">
@@ -259,7 +259,7 @@
             <hr>
         </div>
         <!--Youth Services-->
-        <div id="youthS" class="collapses">
+        <div id="youth" class="collapses">
             <p>We have developed a number of new initiatives to engage youth. Our programs focus on leadership, 
                 employment, self-esteem, social activities and education.
                 Some of the programs we offer:</p>
@@ -482,20 +482,44 @@
 <script type="text/javascript">
     function toggleVis(id, abc){
 
-        if((id=='btn1'||id=='btn2'||id=='btn3'||id=='btn5'||id=='btn6'||id=='btn7'||id=='btn9'||id=='btn10') && document.getElementById(id).classList.toggle("active")==false){
-            var name = document.getElementById(id).getAttribute("name");
-            name = name + "sub";
-            document.getElementById(name).className = 'collapses';
-            var x = document.getElementsByName(name);
-            var i;
-            for(i=0;i<x.length;i++){
-                x[i].classList.remove("active");
-                x[i].className = 'collapses';
-            }
-            var z = document.getElementById(abc);
-            //document.getElementById('btn3').classList.remove("active");
-            //document.getElementById('btn4').classList.remove("active");
-            //document.getElementById('btn5').classList.remove("active");
+        if(id=='btn1' && document.getElementById(id).classList.toggle("active")==false){
+            document.getElementById('btn1a').classList.remove("active");
+            document.getElementById('btn1b').classList.remove("active");
+            document.getElementById('btn1c').classList.remove("active");
+        }
+        if(id=='btn2' && document.getElementById(id).classList.toggle("active")==false){
+            document.getElementById('btn2a').classList.remove("active");
+            document.getElementById('btn2b').classList.remove("active");
+        }
+        if(id=='btn3' && document.getElementById(id).classList.toggle("active")==false){
+            document.getElementById('btn3a').classList.remove("active");
+            document.getElementById('btn3b').classList.remove("active");
+            document.getElementById('btn3c').classList.remove("active");
+            document.getElementById('btn3d').classList.remove("active");
+            document.getElementById('btn3e').classList.remove("active");
+            document.getElementById('btn3f').classList.remove("active");
+        }
+        if(id=='btn5' && document.getElementById(id).classList.toggle("active")==false){
+            document.getElementById('btn5a').classList.remove("active");
+            document.getElementById('btn5b').classList.remove("active");
+        }
+        if(id=='btn6' && document.getElementById(id).classList.toggle("active")==false){
+            document.getElementById('btn6a').classList.remove("active");
+            document.getElementById('btn6b').classList.remove("active");
+            document.getElementById('btn6c').classList.remove("active");
+        }
+        if(id=='btn7' && document.getElementById(id).classList.toggle("active")==false){
+            document.getElementById('btn7a').classList.remove("active");
+            document.getElementById('btn7b').classList.remove("active");
+            document.getElementById('btn7c').classList.remove("active");
+        }
+        if(id=='btn9' && document.getElementById(id).classList.toggle("active")==false){
+            document.getElementById('btn9a').classList.remove("active");
+        }
+        if(id=='btn10' && document.getElementById(id).classList.toggle("active")==false){
+            document.getElementById('btn10a').classList.remove("active");
+            document.getElementById('btn10b').classList.remove("active");
+            document.getElementById('btn10c').classList.remove("active");
         }
 
         var z = document.getElementById(abc);
@@ -505,11 +529,46 @@
         } else {
             z.className = 'collapses';
         }
-        /*if(z.id == 'abtPanel' && z.className == 'collapses'){
-            document.getElementById('bod').className = 'collapses';
-            document.getElementById('sm').className = 'collapses';
-            document.getElementById('ar').className = 'collapses';
-        }*/
+
+        if(z.id == 'btn1Panel' && z.className == 'collapses'){
+            document.getElementById('langls').className = 'collapses';
+            document.getElementById('enhlt').className = 'collapses';
+            document.getElementById('oesl').className = 'collapses';
+        }
+        if(z.id == 'btn2Panel' && z.className == 'collapses'){
+            document.getElementById('setwork').className = 'collapses';
+            document.getElementById('intermed').className = 'collapses';
+        }
+        if(z.id == 'btn3Panel' && z.className == 'collapses'){
+            document.getElementById('youthjob').className = 'collapses';
+            document.getElementById('youthjobS').className = 'collapses';
+            document.getElementById('youthach').className = 'collapses';
+            document.getElementById('beaut').className = 'collapses';
+            document.getElementById('hwclub').className = 'collapses';
+            document.getElementById('youthb2b').className = 'collapses';
+        }
+        if(z.id == 'btn5Panel' && z.className == 'collapses'){
+            document.getElementById('postdis').className = 'collapses';
+            document.getElementById('newhor').className = 'collapses';
+        }
+        if(z.id == 'btn6Panel' && z.className == 'collapses'){
+            document.getElementById('famsup').className = 'collapses';
+            document.getElementById('partas').className = 'collapses';
+            document.getElementById('probgam').className = 'collapses';
+        }
+        if(z.id == 'btn7Panel' && z.className == 'collapses'){
+            document.getElementById('multiww').className = 'collapses';
+            document.getElementById('sheridan').className = 'collapses';
+            document.getElementById('crisis').className = 'collapses';
+        }
+        if(z.id == 'btn9Panel' && z.className == 'collapses'){
+            document.getElementById('newcomer').className = 'collapses';
+        }
+        if(z.id == 'btn10Panel' && z.className == 'collapses'){
+            document.getElementById('carexp').className = 'collapses';
+            document.getElementById('triec').className = 'collapses';
+            document.getElementById('excel').className = 'collapses';
+        }
     }
 </script>
 </body>
