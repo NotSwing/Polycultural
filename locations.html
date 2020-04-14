@@ -6,40 +6,200 @@
     <title>Locations - Polycultural Immigrant and Community Services</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+    <style type="text/css">
+        .collapsible{
+            background-color: #8fb7a5;
+            color: #FFF;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            text-align: left;
+            border: 1px solid white;
+            outline: none;
+            transition: 0.4s;
+            font: 20px Lato, sans-serif;
+        }
+        .active, .collapsible:hover{
+            background-color: #527e6a;
+        }
+        .content{
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #f1f1f1;
+        }
+        .collapsible:after{
+            content: '\02795';
+            font-size: 13px;
+            color: white;
+            float: right;
+            margin-left: 5px;
+            list-style-type:circle;
+        }
+        .active:after{
+            content: '\2796';
+        }
+        
+    </style>
 </head>
 
     <body id="home">
         <!-- Navbar -->
         <header>
-        <nav class="navbar">
-            <div class="container"> 
-                <div class="logo_div">
-                <a href="index.html"><img id="logoImage" src="Logo.png" class="logo"></a></div>
-                <div class="navbarlinks">
-                    <ul class = "menu">
-                        <li><a href="#">Locations</a></li>
-                        <li><a href="#TorontoSouthWest">Toronto South West</a></li>
-                        <li><a href="#EtobicokeCentral">Etobicoke Central</a></li>
-                        <li><a href="#ScarboroughSouth">Scarborough South</a></li>
-                        <li><a href="#ScarboroughNorth">Scarborough North</a></li>                
-                        <li><a href="#AdminOffice">Admin Office</a></li>               
-                        <li><a href="#MississaugaSouthWest">Mississauga South West</a></li>
-                    </ul>    
-                </div>    
-            </nav>
- </header>
+            <nav class="navbar">
+                <div class="container"> 
+                    <div class="logo_div">
+                    <a href="index.html"><img id="logoImage" src="Logo.png" class="logo"></a></div>
+                    <div class="navbarlinks">
+                        <ul class = "menu">
+                            <li><a href="#">Locations</a></li>
+                            <li><a href="#ScarboroughNorth">Toronto South West</a></li>
+                            <li><a href="#EtobicokeCentral">Etobicoke Central</a></li>
+                            <li><a href="#ScarboroughSouth">Scarborough South</a></li>
+                            <li><a href="#ScarboroughNorth">Scarborough North</a></li>                
+                            <li><a href="#AdminOffice">Admin Office</a></li>               
+                            <li><a href="#MississaugaSouthWest">Mississauga South West</a></li>
+                        </ul>    
+                    </div>    
+                </nav>
+    </header>
 
- <section>
-    <h3 id="TorontoSouthWest">Toronto South West</h3>
-    <h3 id="EtobicokeCentral">Etobicoke Central</h3>
-    <h3 id="ScarboroughSouth">Scarborough South</h3>
-    <h3 id="ScarboroughNorth">Scarborough North</h3>
-    <h3 id="AdminOffice">Admin Office</h3>
-    <h3 id="MississaugaSouthWest">Mississauga South West</h3>
+<section>
+    <button id="btn1" type="button" class="collapsible">Scarborough North</button>
+    <div class="content">
+        <div style="width:70%; float:left;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2879.0341715435634!2d-79.2920554!3d43.813650599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d3fda7418971%3A0x63cbad9b7358d752!2s3660a%20Midland%20Ave%2C%20Scarborough%2C%20ON%20M1V%205L6%2C%20Canada!5e0!3m2!1sen!2sus!4v1586896095259!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div style="width:30%; float:right;">
+            <b>3660A Midland Avenue, Scarborough ON <br>416-439-1293</b><hr>
+            <ul>
+                <li>Language Classes</li>
+                <li>Newcomer Orientation</li>
+                <li>Community Connections</li>
+                <li>Commissioner Services</li>
+            </ul><hr>
+            <b>Languages spoken at site:</b>
+            <ul>
+                <li>English</li>
+                <li>Cantonese (ext. 3231 or 3239)</li>
+                <li>Mandarin (ext. 3236 for front desk or 3231 or 3239)</li>
+            </ul>
+        </div>
+    </div>
+    <button type="content" class="collapsible">Scarborough South</button>
+    <div class="content">
+        <div style="width:70%; float:left;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.4154100437677!2d-79.2156498!3d43.7434697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d018d453d3bf%3A0x948f476e59161c94!2sPolycultural%20Immigrant%20%26%20Community%20Services!5e0!3m2!1sen!2sus!4v1586898153259!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>    
+        </div>
+        <div style="width:30%; float:right;">
+            <b>3225 Eglinton Avenue East Units 101 & 111, Scarborough ON<br>416-261-4901</b><hr>
+            <ul>
+                <li>Language Classes</li>
+                <li>Newcomer Orientation</li>
+                <li>Community Connections</li>
+                <li>Career Exploration & Employment Assistance</li>
+                <li>Senior clubs</li>
+                <li>Newcomer Clubs</li>
+                <li>Family Support</li>
+                <li>Commissioner Services</li>
+                <li>Youth Services</li>
+            </ul><hr>
+            <b>Languages spoken at site:</b>
+            <ul>
+                <li>LINC front desk: Nepali, Hindi and Spanish (ext. 3225)</li>
+                <li>Settlement front desk: Pashto, Dari, Urdu, Farsi and Hindi (ext. 3221)</li>
+                <li>Arabic (ext. 3228)</li>
+                <li>Tamil, Sinhalese and Malayalam (ext. 3229)</li>
+                <li>Urdu, Pashto and Dari (ext. 3230)</li>
+                <li>Dari, Farsi and Pashtu (ext. 3232)</li>
+                <li>Bengali (ext. 3233)</li>
+            </ul>
+        </div>
+    </div>
+    <button type="content" class="collapsible">Etobicoke Central</button>
+    <div class="content">
+        <div style="width:70%; float:left;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.1707162480207!2d-79.5225146!3d43.6446164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b37ae4195e237%3A0x652c3d2448bc6267!2s3363%20Bloor%20St%20W%2C%20Etobicoke%2C%20ON%20M8X%201E1%2C%20Canada!5e0!3m2!1sen!2sus!4v1586898368868!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>    
+        </div>
+        <div style="width:30%; float:right;">
+            <b>3363 Bloor Street West, Etobicoke ON<br>416-233-0055</b><hr>
+            <ul>
+                <li>Language Classes</li>
+                <li>Newcomer Orientation</li>
+                <li>Community Connections</li>
+                <li>Career Exploration & Employment Assistance</li>
+                <li>Employment support and Mentorship</li>
+                <li>Newcomer Clubs</li>
+                <li>Support Group for Russian Speaking Women</li>
+                <li>Commissioner Services</li>
+                <li>Youth Job Connection</li>
+            </ul><hr>
+            <b>Languages spoken at site:</b>
+            <ul>
+                <li>English (ext. 1237)</li>
+                <li>Russian (ext. 1225)</li>
+                <li>Romanian (ext. 1225)</li>
+                <li>Serbian and Croatian (ext. 1221)</li>
+            </ul>
+        </div>
+    </div>
+    <button type="content" class="collapsible">Toronoto South West</button>
+    <div class="content">
+        <div style="width:70%; float:left;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.4026543191726!2d-79.4461627!3d43.6397903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b35b66a1603f9%3A0xfefa5da29d10c8cd!2s407-27%20Roncesvalles%20Ave%2C%20Toronto%2C%20ON%20M6R%203B2%2C%20Canada!5e0!3m2!1sen!2sus!4v1586898646089!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div style="width:30%; float:right;">
+            <b>27 Roncesvalles Avenue, Suite 407 Toronto ON<br>416-533-9471</b><hr>
+            <ul>
+                <li>Newcomer Orientation</li>
+                <li>Support Group for Polish Speaking Women</li>
+                <li>Problem Gambling Counselling</li>
+                <li>Partner Assault Response Program</li>
+                <li>Post Discharge Project for Seniors</li>
+                <li>Commissioner Services</li>
+            </ul><hr>
+            <b>Languages spoken at site:</b>
+            <ul>
+                <li>English</li>
+                <li>Intake and Reception ( ext. 4221)</li>
+                <li>Polish (ext. 4222)</li>
+                <li>Russian (ext. 4226)</li>
+            </ul>
+        </div>
+    </div>
+    <button type="content" class="collapsible">Mississauga South West</button>
+    <div class="content">
+        <div style="width:70%; float:left;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.6376330162784!2d-79.6533683!3d43.5307487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b438b213f1bc5%3A0x8e9778640ecba5f!2s2225%20Erin%20Mills%20Pkwy%2C%20Mississauga%2C%20ON%20L5K%201T9%2C%20Canada!5e0!3m2!1sen!2sus!4v1586898681626!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div style="width:30%; float:right;">
+            <b>2225 Erin Mills Parkway, Mississauga ON<br>905-403-8860</b><hr>
+            <ul>
+                <li>Language Classes</li>
+                <li>Professional Language Training</li>
+                <li>Newcomer Orientation</li>
+                <li>Community Connections</li>
+                <li>Youth Services</li>
+                <li>Newcomer Clubs</li>
+                <li>Problem Gambling Counselling</li>
+                <li>Commissioner Services</li>
+            </ul><hr>
+            <b>Languages spoken at site:</b>
+            <ul>
+                <li>English</li>
+                <li>French</li>
+                <li>Urdu (ext. 5253 or 5223)</li>
+                <li>Punjabi (ext. 5253 or 5223)</li>
+                <li>Cantonese (ext. 5232)</li>
+                <li>Mandarin (ext. 5232)</li>
+                <li>Spanish</li>
+                <li>Arabic (ext. 5224)</li>
+                <li>Russian (ext. 5221)</li>
+                <li>Ukrainian</li>
+            </ul>
+        </div>
+    </div>
 </section>
-
-    
 
     <footer class="footer">
         <div class="footerContent">
@@ -72,5 +232,21 @@
             COPYRIGHT &copy; 2020 POLYCULTURAL IMMIGRANT AND COMMUNITY SERVICES
         </div>
     </footer>
+    <script type="text/javascript">
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for(i=0; i<coll.length; i++){
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
 </body>
 </html>

@@ -117,7 +117,7 @@
                     <li><a href="whatWeDo.html">What We Do</a></li>
                     <li><a onclick="toggleVis('btn1','btn1Panel'); toggleVis('btn1','langP');document.getElementById('btn1').classList.toggle('active')" href="#">Language Programs</a></li>
                     <li><a onclick="toggleVis('btn2','btn2Panel'); toggleVis('btn2','conCom'); document.getElementById('btn2').classList.toggle('active'); " href="#">Connecting to Community</a></li>
-                    <li><a onclick="toggleVis('btn3','btn3Panel'); toogleVis('btn3', 'youthS'); document.getElementById('btn3').classList.toggle('active'); " href="#">Youth Services</a></li>
+                    <li><a onclick="toggleVis('btn3','btn3Panel'); toogleVis('btn3', 'youthService'); document.getElementById('btn3').classList.toggle('active'); " href="#">Youth Services</a></li>
                     <li><a onclick="toggleVis(id,'resettle'); document.getElementById('btn4').classList.toggle('active'); " href="#">Resettlement and Refugees Services</a></li>                
                     <li><a onclick="toggleVis(id,'service'); toggleVis(id,'btn5Panel'); document.getElementById('btn5').classList.toggle('active'); " href="#">Services for Seniors</a></li>
                     <li><a onclick="toggleVis(id,'famVA'); toggleVis(id,'btn6Panel');  document.getElementById('btn6').classList.toggle('active'); " href="#">Family Violence and Addiction</a></li>
@@ -139,12 +139,12 @@
                 <button id="btn1b" type="button" class="accordion" onclick="toggleVis(id,'enhlt'); document.getElementById(id).classList.toggle('active')">Enhanced Language Training(ELT)</button>
                 <button id="btn1c" type="button" class="accordion" onclick="toggleVis(id,'oesl'); document.getElementById(id).classList.toggle('active')">Online ESL</button>
             </div>
-        <button id="btn2" type="button" class="accordion" onclick="toggleVis(id,'btn2Panel'); toggleVis(id,'conCom');document.getElementById(id).classList.toggle('active'); ">Connecting to Community</button>
+        <button id="btn2" type="button" class="accordion" onclick="toggleVis(id,'btn2Panel'); toggleVis(id,'conCom'); document.getElementById(id).classList.toggle('active'); ">Connecting to Community</button>
             <div id="btn2Panel" class="collapses">
                 <button id="btn2a" type="button" class="accordion" onclick="toggleVis(id,'setwork'); document.getElementById(id).classList.toggle('active'); ">Settlement Workers in School</button>
                 <button id="btn2b" type="button" class="accordion" onclick="toggleVis(id,'intermed'); document.getElementById(id).classList.toggle('active'); ">International Medical Graduates</button>
             </div>
-        <button id="btn3" type="button" class="accordion" onclick="toggleVis(id,'btn3Panel'); toogleVis(id,'youth'); document.getElementById(id).classList.toggle('active'); ">Youth Services</button>
+        <button id="btn3" type="button" class="accordion" onclick="toggleVis(id,'btn3Panel'); toogleVis(id,'youthService'); document.getElementById(id).classList.toggle('active'); ">Youth Services</button>
             <div id="btn3Panel" class="collapses">
                 <button id="btn3a" type="button" class="accordion" onclick="toggleVis(id,'youthjob'); document.getElementById(id).classList.toggle('active'); ">Youth Job Connection</button>
                 <button id="btn3b" type="button" class="accordion" onclick="toggleVis(id,'youthjobS'); document.getElementById(id).classList.toggle('active'); ">Youth Job Connection(YJC) Summer</button>
@@ -259,10 +259,11 @@
             <hr>
         </div>
         <!--Youth Services-->
-        <div id="youth" class="collapses">
+        <div id="youthService" class="collapses">
             <p>We have developed a number of new initiatives to engage youth. Our programs focus on leadership, 
                 employment, self-esteem, social activities and education.
-                Some of the programs we offer:</p>
+                Some of the programs we offer:
+            </p>
             <hr>
         </div>
         <div id="youthjob" class="collapses">
