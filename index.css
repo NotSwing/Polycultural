@@ -101,11 +101,11 @@ background: whitesmoke;
   }
     /* 
 FOOTER */
- footer{
+ .footer{
    background: #f1f1f1;
    padding:90px 0;
-
  }
+
 .containerFooter{
   width: 100%;
   margin: auto;

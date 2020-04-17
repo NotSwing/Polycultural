@@ -3,10 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resources - Polycultural Immigrant and Community Services</title>
+    <title>Home - Polycultural Immigrant and Community Services</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+            position: relative;
+            min-height: 80%;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        }
+
+    </style>
+
+    <!-- <style>
+        .vl {
+            border-left: 4px solid green;
+            height: 500px;
+            position: absolute;
+            left: 50%;
+            margin-left: -3px;
+            /* top: 0; */
+        }
+
+    </style> -->
 </head>
 
     <body id="home">
@@ -19,26 +77,102 @@
                 <div class="navbarlinks">
                     <ul class = "menu">
                         <li><a href="#">Resources</a></li>
-                        <li><a href="#newcomerInformation">Newcomer Information</a></li>
-                        <li><a href="#groupInsurance">Group Insurance</a></li>
-                        <li><a href="#employerJobPostings">Employer Job Postings</a></li>
-                        <li><a href="#resources">Resources (مواقع الكترونية خدماتية)</a></li>
+                        <li><a href="Newcomer.html">Newcomer Information</a></li>
+                        <li><a href="Insurance.html">Group Insurance</a></li>
+                        <li><a href="JobPosting.html">Employer Job Postings</a></li>
+                        <li><a href="Resource.html">Resources (مواقع الكترونية خدماتية)</a></li>
                     </ul>    
-                </div>    
-            </nav>
- </header>
+                </div>
+            </div>
+        </nav>
+        </header>
+        <div class="hero-unit">
+            <div class="container">
+                        
+                <h1>Resources</h1>
+            </div> 
+        </div>
 
- <section>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="Newcomer.html">Newcomer Information</a>
+            <a href="Insurance.html">Group Insurance</a>
+            <a href="JobPosting.html">Employer Job Posting</a>
+            <a href="Resource.html">Resources</a>
+        </div>
+          
+          
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu </span>
+          
+        <script>
+
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+            
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+    
+        <div style="width:70%; float:right;">
+            <div id="page">
+                
+
+                <div class="containerr-clearfix" id="main-content"> 
+                    <div class="row-fluid sidebar-left">
+                        <div class="span 9 primary-column">
+                            <!--begin primary column content-->
+                            <section class="no_side_body no_body_content_left no_body_content_right" id="body_content">
+                                <section id="body"><div class="inner"><h3>Newcomer Information</h3>
+                                <p><a title="Welcome To Canada Cic 2013" href="/system/resources/W1siZiIsIjIwMTMvMDQvMjMvMjAvNTcvNTMvNDUzL1dlbGNvbWVfdG9fQ2FuYWRhX0NJQ18yMDEzLnBkZiJdXQ/Welcome%20to%20Canada_CIC_2013.pdf">Welcome to Canada: What you should know</a> - Citizenship and Immigration Canada - March 2013
+                                </p>
+                                <p><a href="http://www.prepareforcanada.com/" title="http://www.prepareforcanada.com/" target="_blank">Prepare for Canada Website</a>
+                                </p>
+                                <p><a target="_blank" title="http://www.settlement.org" href="http://www.settlement.org">Information and Resources on Settlement in Ontario, Canada</a>&nbsp;- Settlement.org</p>
+                                <p><a href="http://www.youtube.com/user/immigroup/videos" title="http://www.youtube.com/user/immigroup/videos" target="_blank">How to fill out government forms</a>&nbsp;- Immigroup (English videos)</p>
+                                <p><a href="http://www.bridgetranslations.com/bridget/index.html" title="http://www.bridgetranslations.com/bridget/index.html" target="_blank">How to fill out government forms</a> - Bridget Translations (multilingual videos)</p>
+                                <h3>Employment&nbsp;</h3>
+                                <p><a title="http://www.ontarioimmigration.ca/en/working/OI_HOW_WORK_PROF_PROFS.html" href="http://www.ontarioimmigration.ca/en/working/OI_HOW_WORK_PROF_PROFS.html">Regulated Professions in Ontario</a>
+                                </p>
+                                <h3>Education&nbsp;</h3>
+                                <p><a title="http://www.ontario.ca/education-and-training/go-college-or-university-ontario" href="http://www.ontario.ca/education-and-training/go-college-or-university-ontario">Post-Secondary Education, Colleges and Universities
+                                </a>
+                                </p>
+                                <h3>Family Violence</h3>
+                                <p><a href="/system/resources/W1siZiIsIjIwMTcvMTAvMTMvMTMvMzIvMTkvOTMwL0ltcGFjdF9vZl9GYW1pbHlfVmlvbGVuY2Vfb25fQ2hpbGRyZW5fQnJvY2h1cmVfUnVzc2lhbl9PY3RfMjAxNy5wZGYiXV0/Impact%20of%20Family%20Violence%20on%20Children%20-%20Brochure_Russian_Oct%202017.pdf" title="Impact Of Family Violence On Children   Brochure Russian Oct 2017">Impact of Family Violence on Children</a>&nbsp;(Russian)</p>
+                                <p><a href="/system/resources/W1siZiIsIjIwMTcvMTAvMTYvMTIvNTcvMTcvMjI4L0ltcGFjdF9vZl9GYW1pbHlfVmlvbGVuY2Vfb25fQ2hpbGRyZW5fQnJvY2h1cmVfUG9saXNoX19PY3RvYmVyXzIwMTcucGRmIl1d/Impact%20of%20Family%20Violence%20on%20Children%20-%20Brochure_Polish_%20October%202017.pdf" title="Impact Of Family Violence On Children   Brochure Polish  October 2017">Impact of Family Violence on Children</a>&nbsp;(Polish)</p>
+                                <h3>Public Health</h3>
+                                <p><a href="http://talkaboutdrugs.ca " title="http://talkaboutdrugs.ca " target="_blank">Talk about drugs online parent modules</a>
+                                </p></div>
+                        
+                                </section>
+                        
+                            </section>
+                        
+                        </div>
+                    
+    
+                    </div>
+                    
+
+                </div>
+                    
+
+            </div>
+        </div>
+            
+ <!-- <section>
     <h3 id="newcomerInformation">Newcomer Information</h3>
     <h3 id="groupInsurance">Group Insurance</h3>
     <h3 id="employerJobPostings">Employer Job Postings</h3>
-    <h3 id="resources">Resources (مواقع الكترونية خدماتية)</h3>
-</section>
+    <h3 id="resources">Resources</h3>
+</section> -->
 
     
 
     <footer class="footer">
-        <div class="footerContent">
+        <div class="footer-Content">
             <div class="section bout">
                 <h1 class="contactText">Contact Us</h1>
                 <p>Polycultural Immigrant &amp; Community Services<br />
@@ -58,7 +192,7 @@
                 </ul>
             </div>
             <div class="section contactForm">
-                <button class="contactButton"><a href="#"></a>Contact Us</button>
+                <input type="button" value="Contact Us" onclick="location.href = 'ContactForm.html';">
             </div>
         </div>
        
@@ -68,5 +202,35 @@
             COPYRIGHT &copy; 2020 POLYCULTURAL IMMIGRANT AND COMMUNITY SERVICES
         </div>
     </footer>
-</body>
+        <!-- <footer>
+            <div class="containerFooter">
+                <div class="leftCol">
+                    <img src="Logo.png" alt="" class="footerLogo">
+                    <div class="socialMedia">
+                        <a href="https://www.facebook.com/Polycultural"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/polycultural"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/polycultural-immigrant-&-community-services/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <p class="rightText"> COPYRIGHT &copy; 2020 POLYCULTURAL IMMIGRANT AND COMMUNITY SERVICES</p>
+                </div>
+                <div class="middle">
+                    <div class="middleContent">
+                        something here
+                    </div>
+                </div>
+                <div class="rightCol">
+                    <h1>Contact Us</h1>
+                    <div class="border"></div>
+                    <p class="contactParagraph">Polycultural Immigrant &amp; Community Services<br />
+                        17 Four Seasons Place,&#160;Suite 102<br />
+                        Toronto ON M9B 6E6<br />
+                        <strong>phone:</strong> 1.844.493.5839<br />
+                        <strong>fax:</strong> 416.233.1651<br />
+                        <strong>email:</strong> <a title="info@polycultural.org" href="mailto:%69%6e%66%6f%40%70%6f%6c%79%63%75%6c%74%75%72%61%6c%2e%6f%72%67">info@polycultural.org
+                        </a>
+                    </p>       
+                </div>
+            </div>
+        </footer> -->
+    </body>
 </html>
