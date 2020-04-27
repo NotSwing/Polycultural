@@ -6,7 +6,7 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+    <link rel="stylesheet" href="Form.css">
 </head>
 
     <body id="home">
@@ -25,42 +25,84 @@
             </nav>
  </header>
 
- <section>
-     <h2>Contact Us</h2>
- </section>
+ <div class = "BigOof">
+    <h1>Contact Us</h1>
 
+    <br>------------------------------------------------------------<br>
+    <h2>We look forward to hearing from you</h2>
     
+    <p>
+        Please allow a 2-3 day response time. If you need more information about our services, or would like to register for a program, please contact our service delivery sites directly.
+    </p>
+    <h3> <a href = "Extention Poster.png">To view our extensions for all locations please click here</a> </h3>
+    
+    <p>
+        You can find contact information for each of our sites <a href = "http://www.polycultural.org/locations">here</a>.
+        <br><br>
+        <strong>click on one of the buttons below to chat with us:</strong>
+    
+    </p>
 
-    <footer class="footer">
-        <div class="footerContent">
-            <div class="section bout">
-                <h1 class="contactText">Contact Us</h1>
-                <p>Polycultural Immigrant &amp; Community Services<br />
-                    17 Four Seasons Place,&#160;Suite 102<br />
-                    Toronto ON M9B 6E6<br />
-                    <strong>phone:</strong> 1.844.493.5839<br />
-                    <strong>fax:</strong> 416.233.1651<br />
-                    <strong>email:</strong> <a title="info@polycultural.org" href="mailto:%69%6e%66%6f%40%70%6f%6c%79%63%75%6c%74%75%72%61%6c%2e%6f%72%67">info@polycultural.org
-                    </a>
-                    </p>
+    <button type = "button"  class = "buttonthingy">Chat in English</button><br><br>
+    <button type = "button" class = "buttonthingy">Chat in Polish</button><br><br>
+    <button type = "button" class = "buttonthingy">Chat in Chinese</button><br><br>
+    <button type = "button" class = "buttonthingy">Chat in Arabic</button><br><br>
+
+
+</div>
+
+<div class = "ContactOof">
+    <form id = "Contact Form" method = "post">
+        
+        <label for = "Name">Your Name:</label>
+        <br>
+        <input name = "Your name" name = "Name" class = "Form-Style" type = "text" placeholder="Your Name" required> <br>
+        <label for = "Phone">Your Phone Number:</label>
+        <br>
+        <input name = "Phone" name = "Phone" class = "Form-Style" type = "text" placeholder="Phone Number" required> <br>
+        <label for = "Email">Your Email Address:</label>
+        <br>
+        <input name = "Email Addresss" name = "Email" class = "Form-Style" type = "text" placeholder="Email Address" required>
+        <br>
+        <textarea name = "Message" placeholder = "Please enter your message here" class = "message" rows = 10 cols = 50></textarea required>
+        <br><br>
+        <input type = "submit" value = "SEND MESSAGE" class = "Message">
+    </form>
+</div>
+
+<br>
+
+
+<footer>
+    <div class="containerFooter">
+        <div class="leftCol">
+            <img src="Logo.png" alt="" class="footerLogo">
+            <div class="socialMedia">
+                <a href="http://www.facebook.com/Polycultural"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
             </div>
-            <div class="section media">
-                <ul class="social">
-                    <li><a class="fa fa-facebook" href="http://www.facebook.com/Polycultural" target="_blank" data-placement="bottom" title="Follow us on Facebook"></a></li>
-                    <li><a class="fa fa-twitter" href="http://twitter.com/polycultural" target="_blank" data-placement="bottom" title="Follow us on Twitter"></a></li>
-                    <li><a class="fa fa-linkedin" href="http://www.linkedin.com/company/polycultural-immigrant-&amp;-community-services" target="_blank" data-placement="bottom" title="Follow us on LinkedIn"></a></li>
-                </ul>
-            </div>
-            <div class="section contactForm">
-                <button class="contactButton"><a href="#"></a>Contact Us</button>
+            <p class="rightText"> COPYRIGHT &copy; 2020 POLYCULTURAL IMMIGRANT AND COMMUNITY SERVICES</p>
+        </div>
+        <div class="middle">
+            <div class="middleContent">
+                something here
             </div>
         </div>
-       
-
-
-        <div class="footerBottom">
-            COPYRIGHT &copy; 2020 POLYCULTURAL IMMIGRANT AND COMMUNITY SERVICES
+        <div class="rightCol">
+            <h1>Contact Us</h1>
+            <div class="border"></div>
+            <p class="contactParagraph">Polycultural Immigrant &amp; Community Services<br />
+                17 Four Seasons Place,&#160;Suite 102<br />
+                Toronto ON M9B 6E6<br />
+                <strong>phone:</strong> 1.844.493.5839<br />
+                <strong>fax:</strong> 416.233.1651<br />
+                <strong>email:</strong> <a title="info@polycultural.org" href="mailto:%69%6e%66%6f%40%70%6f%6c%79%63%75%6c%74%75%72%61%6c%2e%6f%72%67">info@polycultural.org
+                </a>
+            </p>       
         </div>
-    </footer>
+    </div>
+</footer>    
+
 </body>
 </html>
