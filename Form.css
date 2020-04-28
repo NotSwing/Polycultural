@@ -7,28 +7,40 @@ body{
 }
 
 
-div.Other-Info{
-    padding: 0px;
+div.BigOof{
+    width: 45%;
+    float: left;
+    clear: none;
+    margin: 5px;
+    padding-left: 100px;
 }
 
-
+div.ContactOof
+{
+    width: 45%;
+    float: right;
+    clear: none;
+    margin: 5px;
+    padding-right: 100px;
+}
 
 div.BigOof h1
 {
     color: rgba(44, 130, 201, 1);
-    background-color: rgb(182, 173, 173);
+ 
+    text-align: center;
 }
 
 div.BigOof h2
 {
     color: rgba(44, 130, 201, 1);
-    background-color: rgb(182, 173, 173);
+   
 }
 
 div.BigOof h3
 {
     color: rgba(44, 130, 201, 1);
-    background-color: rgb(182, 173, 173);
+ 
 }
 
 form
