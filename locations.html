@@ -6,7 +6,7 @@
     <title>Locations - Polycultural Immigrant and Community Services</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style type="text/css">
+    <style>
         .collapsible{
             background-color: #8fb7a5;
             color: #FFF;
@@ -46,19 +46,19 @@
     <body id="home">
         <!-- Navbar -->
         <header>
+            <div class="logodiv"> 
+                <div class="logo">
+                <a href="index.html"><img id="logoImage" src="Logo.png" class="logo"></a></div>
+            </div>
             <nav class="navbar">
-                <div class="container"> 
-                    <div class="logo_div">
-                    <a href="index.html"><img id="logoImage" src="Logo.png" class="logo"></a></div>
                     <div class="navbarlinks">
                         <ul class = "menu">
                             <li><a href="#">Locations</a></li>
-                            <li><a href="#ScarboroughNorth">Toronto South West</a></li>
-                            <li><a href="#EtobicokeCentral">Etobicoke Central</a></li>
-                            <li><a href="#ScarboroughSouth">Scarborough South</a></li>
-                            <li><a href="#ScarboroughNorth">Scarborough North</a></li>                
-                            <li><a href="#AdminOffice">Admin Office</a></li>               
-                            <li><a href="#MississaugaSouthWest">Mississauga South West</a></li>
+                            <li><a onclick="document.getElementById('btn1').click()" href="#">Scarborough North</a></li>
+                            <li><a onclick="document.getElementById('btn2').click()" href="#">Scarborough South</a></li>
+                            <li><a onclick="document.getElementById('btn3').click()" href="#">Etobicoke Central</a></li>
+                            <li><a onclick="document.getElementById('btn4').click()" href="#">Toronoto South West</a></li>                
+                            <li><a onclick="document.getElementById('btn5').click()" href="#">Mississauga South West</a></li>               
                         </ul>    
                     </div>    
                 </nav>
@@ -86,7 +86,7 @@
             </ul>
         </div>
     </div>
-    <button type="content" class="collapsible">Scarborough South</button>
+    <button id="btn2" type="button" class="collapsible">Scarborough South</button>
     <div class="content">
         <div style="width:70%; float:left;">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.4154100437677!2d-79.2156498!3d43.7434697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d018d453d3bf%3A0x948f476e59161c94!2sPolycultural%20Immigrant%20%26%20Community%20Services!5e0!3m2!1sen!2sus!4v1586898153259!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>    
@@ -116,7 +116,7 @@
             </ul>
         </div>
     </div>
-    <button type="content" class="collapsible">Etobicoke Central</button>
+    <button id="btn3" type="content" class="collapsible">Etobicoke Central</button>
     <div class="content">
         <div style="width:70%; float:left;">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.1707162480207!2d-79.5225146!3d43.6446164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b37ae4195e237%3A0x652c3d2448bc6267!2s3363%20Bloor%20St%20W%2C%20Etobicoke%2C%20ON%20M8X%201E1%2C%20Canada!5e0!3m2!1sen!2sus!4v1586898368868!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>    
@@ -143,7 +143,7 @@
             </ul>
         </div>
     </div>
-    <button type="content" class="collapsible">Toronoto South West</button>
+    <button id="btn4" type="content" class="collapsible">Toronoto South West</button>
     <div class="content">
         <div style="width:70%; float:left;">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.4026543191726!2d-79.4461627!3d43.6397903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b35b66a1603f9%3A0xfefa5da29d10c8cd!2s407-27%20Roncesvalles%20Ave%2C%20Toronto%2C%20ON%20M6R%203B2%2C%20Canada!5e0!3m2!1sen!2sus!4v1586898646089!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
@@ -167,7 +167,7 @@
             </ul>
         </div>
     </div>
-    <button type="content" class="collapsible">Mississauga South West</button>
+    <button id="btn5" type="content" class="collapsible">Mississauga South West</button>
     <div class="content">
         <div style="width:70%; float:left;">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.6376330162784!2d-79.6533683!3d43.5307487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b438b213f1bc5%3A0x8e9778640ecba5f!2s2225%20Erin%20Mills%20Pkwy%2C%20Mississauga%2C%20ON%20L5K%201T9%2C%20Canada!5e0!3m2!1sen!2sus!4v1586898681626!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
@@ -201,37 +201,36 @@
     </div>
 </section>
 
-    <footer class="footer">
-        <div class="footerContent">
-            <div class="section bout">
-                <h1 class="contactText">Contact Us</h1>
-                <p>Polycultural Immigrant &amp; Community Services<br />
-                    17 Four Seasons Place,&#160;Suite 102<br />
-                    Toronto ON M9B 6E6<br />
-                    <strong>phone:</strong> 1.844.493.5839<br />
-                    <strong>fax:</strong> 416.233.1651<br />
-                    <strong>email:</strong> <a title="info@polycultural.org" href="mailto:%69%6e%66%6f%40%70%6f%6c%79%63%75%6c%74%75%72%61%6c%2e%6f%72%67">info@polycultural.org
-                    </a>
-                    </p>
+<footer>
+    <div class="containerFooter">
+        <div class="leftCol">
+            <img src="Logo.png" alt="" class="footerLogo">
+            <div class="socialMedia">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
             </div>
-            <div class="section media">
-                <ul class="social">
-                    <li><a class="fa fa-facebook" href="http://www.facebook.com/Polycultural" target="_blank" data-placement="bottom" title="Follow us on Facebook"></a></li>
-                    <li><a class="fa fa-twitter" href="http://twitter.com/polycultural" target="_blank" data-placement="bottom" title="Follow us on Twitter"></a></li>
-                    <li><a class="fa fa-linkedin" href="http://www.linkedin.com/company/polycultural-immigrant-&amp;-community-services" target="_blank" data-placement="bottom" title="Follow us on LinkedIn"></a></li>
-                </ul>
-            </div>
-            <div class="section contactForm">
-                <button class="contactButton"><a href="ContactUs.html"></a>Contact Us</button>
+            <p class="rightText"> COPYRIGHT &copy; 2020 POLYCULTURAL IMMIGRANT AND COMMUNITY SERVICES</p>
+        </div>
+        <div class="middle">
+            <div class="middleContent">
+                something here
             </div>
         </div>
-       
-
-
-        <div class="footerBottom">
-            COPYRIGHT &copy; 2020 POLYCULTURAL IMMIGRANT AND COMMUNITY SERVICES
+        <div class="rightCol">
+            <h1>Contact Us</h1>
+            <div class="border"></div>
+            <p class="contactParagraph">Polycultural Immigrant &amp; Community Services<br />
+                17 Four Seasons Place,&#160;Suite 102<br />
+                Toronto ON M9B 6E6<br />
+                <strong>phone:</strong> 1.844.493.5839<br />
+                <strong>fax:</strong> 416.233.1651<br />
+                <strong>email:</strong> <a title="info@polycultural.org" href="mailto:%69%6e%66%6f%40%70%6f%6c%79%63%75%6c%74%75%72%61%6c%2e%6f%72%67">info@polycultural.org
+                </a>
+            </p>       
         </div>
-    </footer>
+    </div>
+</footer>
     <script type="text/javascript">
         var coll = document.getElementsByClassName("collapsible");
         var i;

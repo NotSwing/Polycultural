@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    padding: 20px;
+    text-align :left;
+    background : white;
+
+}
+
+
+div.BigOof{
+    width: 45%;
+    float: left;
+    clear: none;
+    margin: 5px;
+    padding-left: 100px;
+}
+
+div.ContactOof
+{
+    width: 45%;
+    float: right;
+    clear: none;
+    margin: 5px;
+    padding-right: 100px;
+}
+
+div.BigOof h1
+{
+    color: rgba(44, 130, 201, 1);
+ 
+    text-align: center;
+}
+
+div.BigOof h2
+{
+    color: rgba(44, 130, 201, 1);
+   
+}
+
+div.BigOof h3
+{
+    color: rgba(44, 130, 201, 1);
+ 
+}
+
+form
+{
+    margin-top: 30px;
+}
+
+.Form-Style
+{
+    padding: 4px;
+    width: 500px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    border-radius: 2px;
+}
+
+.Message
+{
+    background: rgb(248, 84, 24);
+    border-color: transparent;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    width: 200px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.Message:hover
+{
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+.buttonthingy
+{
+    background-color: gray;
+    border : none;
+    color: lightblue;
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 12px;
+}
+
+.Other-Info
+{
+    background-color: gray;
+}
+
+div.Other-Info p.subtext
+{
+    font-size: 7px;
+}
+
+div.Copyright
+{
+    padding: 12px;
+    background-color: rgb(76, 94, 146);
+    color: indigo;
+    font-size: 10px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Name: Navjot Singh
+            Assignment: HW5-->
+            <?php echo "<title>My Music Page</title>";?>
+        </head>
+        <body style="text-align: center; background-color:#A0FFFF;">
+            <?php
+                error_reporting(E_ERROR|E_WARNING|E_PARSE);//stopping the annoying "Notice:" message for $name = $_POST['name'] when starting a fresh page
+    
+                echo "<h2 style='background-color:rgb(211,211,211); border-style:solid; border-width:thin;'>My Music Page</h2>";
+    
+                $favArtists = array("Toby Keith","Lil Wayne","Tyler the Creator");//array of favorite artists, at the beginning to allow for appending when submit is pressed
+                $name = $_POST['name'];//creating variable for when a new artist is submitted
+                if((!in_array($name,$favArtists,FALSE)) && (is_string($name))){//checking $favArtists to see if the submitted name is in the array and if it has been submitted
+                    array_push($favArtists,$name);//appending to $favArtists
+                }
+    
+                $musicPlaylists = array('Should have been a Cowboy','Nightmares of the Bottom','Domo23');//array of songs
+                $numOfSongs = sizeof($musicPlaylists);//variable to hold the number of songs
+                echo "<h3>My Favorite Artists are:</h3>";
+                foreach($favArtists as $a){//display all artists
+                    echo "<a style='text-decoration:none; color:blue;' href=''>"."<b>$a</b>"."</a>"."<br>";
+                }
+    
+                echo "<h3>My Music and Playlists are:</h3>";//display all songs
+                foreach($musicPlaylists as $b){
+                    echo "<a style='text-decoration:none; color:blue;' href=''>"."<b>$b</b>"."</a>"."<br>";
+                }
+                echo "<p style='background-color:rgb(211,211,211);'>"."<b>There are $numOfSongs songs in your playlist</b>"."</p>";//display the number of songs
+                
+                echo "<b>Your favorite artist is: <u>$name</u></b>";//display the submitted favorite artist
+                
+                echo "<br><br>";
+            ?>
+            <form action="<?=$_SERVER['PHP_SELF']?>" method='POST'><!--when the form is submitted, php above is recalculated-->
+                <label for="name"><b>Enter your favorite artists:</b></label>
+                <input type="text" name="name"><br><br>
+                <input type="submit" value="Submit Query" style="border-radius:50%; border:1px solid; width:100px; height:20px;">
+            </form>
+        </body>
+    </html>
