@@ -119,29 +119,31 @@
     <body>
         <!-- Navbar -->
         <header>
-        <nav class="navbar">
-            <div class="container"> 
-                <div class="logo_div">
+            <div class="logodiv"> 
+                <div class="logo">
                 <a href="index.html"><img id="logoImage" src="Logo.png" class="logo"></a></div>
-                <div class="navbarlinks">
-                    <ul class = "menu">
-                        <li><a href="#">Resources</a></li>
-                        <li><a href="Newcomer.html">Newcomer Information</a></li>
-                        <li><a href="Insurance.html">Group Insurance</a></li>
-                        <li><a href="JobPosting.html">Employer Job Postings</a></li>
-                        <li><a href="Resource.html">Resources (مواقع الكترونية خدماتية)</a></li>
-                    </ul>    
-                </div>
             </div>
-        </nav>
-        </header> 
+            <nav class="navbar">
+                    <div class="navbarlinks">
+                        <ul class = "menu">
+                            <li><a href="#">Resources</a></li>
+                            <li><a onclick="document.getElementById('btn1').click()" href="#">Newcomer Information</a></li>
+                            <li><a onclick="document.getElementById('btn2').click()" href="#">Group Insurance</a></li>
+                            <li><a onclick="document.getElementById('btn3').click()" href="#">Employment</a></li>
+                            <li><a onclick="document.getElementById('btn4').click()" href="#">Education</a></li>                
+                            <li><a onclick="document.getElementById('btn5').click()" href="#">COVID-19 Resource</a></li>
+                            <li><a onclick="document.getElementById('btn6').click()" href="#">Family Violence</a></li>               
+                        </ul>    
+                    </div>    
+                </nav>
+        </header>
 
         <section>
             <h2>Resources</h2>
 
                         <p></p>
 
-                        <button class="collapsible">Service Canada Critical Service and Program</button>
+                        <button id="btn5" type="button" class="collapsible">Service Canada Critical Service and Program</button>
                         <div class="content">
                             <p>
                                 <ol>
@@ -153,44 +155,62 @@
                             </p>
                         </div>
 
-                        <button class="collapsible">Newcomer Information</button>
+                        <button id="btn1" type="button" class="collapsible">Newcomer Information</button>
                         <div class="content">
                         <p>
                             <ol> 
                                 <a title="Welcome To Canada Cic 2013" href="/pdf_docs/Welcome to Canada_CIC_2013.pdf">Welcome to Canada:  	What you should know.</a> Citizanship and immigration Canada-2013
-                                <a href="http://www.prepareforcanada.com/" 						title="http://www.prepareforcanada.com/" target="_blank">Prepare for Canada Website</a> <br>
+                                <a href="http://www.prepareforcanada.com/" title="http://www.prepareforcanada.com/" target="_blank">Prepare for Canada Website</a> <br>
                                 <a target="_blank" title="http://www.settlement.org" href="http://www.settlement.org">Information and Resources on Settlement in Ontario, Canada</a>&nbsp;- Settlement.org <br>
-                                <a href="http://www.youtube.com/user/immigroup/videos" title="http://www.youtube.com/user/immigroup/videos" target="_blank">How to fill out government forms</a>&nbsp;- Immigroup (English videos)
-                                
+                                <a href="http://www.youtube.com/user/immigroup/videos" title="http://www.youtube.com/user/immigroup/videos" target="_blank">How to fill out government forms</a>&nbsp;- Immigroup (English videos)<br>
+                                <a title="Newcomer Information" href="https://newtocanada.humber.ca/index.php?q=bridging-programs.html">
+                                    Humber College Bridging Program for foreign-trained professional newcomers in: Supply Chain Management, IT, Engineering, Sales & Marketing, and trades (electricians, refrigeration technicians, etc.).</a><br>
+                                <a title="Citizenship and Immigration Canada" href="https://www.cic.gc.ca/english/newcomers/services/index.asp?utm_source=cic-homepage-eng&utm_medium=homepage-feature&utm_campaign=ENG_Services_for_newcomers">Citizenship and Immigration Canada</a><br>
+                                <a title="City of Toronto - Information Portal for New Immigrants" href="http://www1.toronto.ca/wps/portal/contentonly?vgnextoid=6fa6ba2ae8b1e310VgnVCM10000071d60f89RCRD&vgnextfmt=default">
+                                    City of Toronto - Information Portal for New Immigrants
+                                </a> <br>
                             </ol>
                         </p>
                         </div>
 
-                        <button class="collapsible">Employment </button>
+                        <button id="btn3" type="button" class="collapsible">Employment </button>
                         <div class="content">
                             <p>
                                 <ol>
-                                    <a title="http://www.ontarioimmigration.ca/en/working/OI_HOW_WORK_PROF_PROFS.html" href="http://www.ontarioimmigration.ca/en/working/OI_HOW_WORK_PROF_PROFS.html">Regulated Professions in Ontario</a>&nbsp;               
+                                    <a title="http://www.ontarioimmigration.ca/en/working/OI_HOW_WORK_PROF_PROFS.html" href="http://www.ontarioimmigration.ca/en/working/OI_HOW_WORK_PROF_PROFS.html">Regulated Professions in Ontario</a>&nbsp; <br>               
+                                    <a title="Employer Job Postings" href="https://magnet.today/">Employer Job Postings</a> <br>
                                 </ol>
                             </p>
                         </div>
 
-                        <button class="collapsible"> Education </button>
+                        <button id="btn4" type="button" class="collapsible"> Education </button>
                         <div class="content">
                             <p><a title="http://www.ontario.ca/education-and-training/go-college-or-university-ontario" href="http://www.ontario.ca/education-and-training/go-college-or-university-ontario">Post-Secondary Education, Colleges and Universities</a>
                             </p>
                         </div>
 
-                        <button class="collapsible"> Family Violence</button>
+                        <button id="btn6" type="button"   class="collapsible"> Family Violence</button>
                         <div class="content">
-                            <p><a href="#" title="Impact Of Family Violence On Children   Brochure Russian Oct 2017">Impact of Family Violence on Children</a>&nbsp;(Russian)</p>
-                        <p><a href="#" title="Impact Of Family Violence On Children   Brochure Polish  October 2017">Impact of Family Violence on Children</a>&nbsp;(Polish)</p>
+                            <p><a href="/pdf_docs/Impact of Family Violence on Children - Brochure_Polish_ October 2017.pdf" title="Impact Of Family Violence On Children   Brochure Russian Oct 2017">Impact of Family Violence on Children</a>&nbsp;(Russian)<br>
+                               <a href="/pdf_docs/Impact of Family Violence on Children - Brochure_Russian_Oct 2017.pdf" title="Impact Of Family Violence On Children   Brochure Polish  October 2017">Impact of Family Violence on Children</a>&nbsp;(Polish)<br>
+                            </p>
                         </div>
 
                         <button class="collapsible">Public Health</button>
                         <div class="content">
                             <p>
                                 <a href="http://talkaboutdrugs.ca" title="http://talkaboutdrugs.ca " target="_blank">Talk about drugs online parent modules</a>
+                            </p>
+                        </div>
+
+                        <button id="btn2" type="button" class="collapsible">Group Insurance</button>
+                        <div class="content">
+                            <p>
+                                <a href="https://www.memberhealthplan.com/LH/AgentBroker/Corporate/WebLinkDisclaimer.jsp?lang=E&assocId=988773">
+                                Manulife Financial</a>
+                                <a href="https://www.memberhealthplan.com/LH/AgentBroker/Corporate/WebLinkDisclaimer.jsp?lang=E&assocId=988773">FollowMe Health Plan & Critical Illness Weblink</a> <br>
+                                <a href="https://www.memberhealthplan.com/ga/hd/index.jsp?lang=E&assocId=MCCREERYB&province=AB">Association Health & Dental Plan Weblink</a><br>
+                                <a href="https://www.manulife-travel.ca/dist/home.html?as=wlbmc">Travel Insurance & Super Visa Weblink</a> <br>
                             </p>
                         </div>
 
