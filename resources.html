@@ -56,6 +56,51 @@
             bottom: 0;
         }
 
+        .collapsible {
+            background-color:#8fb7a5 ;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 20px;
+            }
+
+            .active, .collapsible:hover {
+            background-color: #555;
+            }
+
+            .collapsible:after {
+            content: '\002B';
+            color: white;
+            font-weight: 800;
+            float: right;
+            margin-left: 5px;
+            }
+
+            .active:after {
+            content: "\2212";
+            }
+
+            .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #f1f1f1;
+            }
+
+            h2 {
+            font-family: Arial, Verdana;
+            font-weight: 600;
+            font-size: 2.0rem;
+            color: #091f2f;
+            text-transform: uppercase;
+            }
+            
+
     </style>
 
     <!-- <style>
@@ -89,93 +134,79 @@
                 </div>
             </div>
         </nav>
-        </header>
-        <div class="hero-unit">
-            <div class="container">
-                        
-                <h1>Resources</h1>
-            </div> 
-        </div>
+        </header> 
 
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="Newcomer.html">Newcomer Information</a>
-            <a href="Insurance.html">Group Insurance</a>
-            <a href="JobPosting.html">Employer Job Posting</a>
-            <a href="Resource.html">Resources</a>
-        </div>
-          
-          
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu </span>
-          
-        <script>
+        <section>
+            <h2>Resources</h2>
 
-            function openNav() {
-                document.getElementById("mySidenav").style.width = "250px";
-            }
-            
-            function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-            }
-        </script>
-        
-        <div style="width:70%; float:right;">
-            <div id="page">
+                        <p></p>
 
-                <div class="containerr-clearfix" id="main-content"> 
-                    <div class="row-fluid sidebar-left">
-                        <div class="span 9 primary-column">
-                            <!--begin primary column content-->
-                            <section class="no_side_body no_body_content_left no_body_content_right" id="body_content">
-                                <section id="body"><div class="inner"><h3>Newcomer Information</h3>
-                                <p><a title="Welcome To Canada Cic 2013" href="/system/resources/W1siZiIsIjIwMTMvMDQvMjMvMjAvNTcvNTMvNDUzL1dlbGNvbWVfdG9fQ2FuYWRhX0NJQ18yMDEzLnBkZiJdXQ/Welcome%20to%20Canada_CIC_2013.pdf">Welcome to Canada: What you should know</a> - Citizenship and Immigration Canada - March 2013
-                                </p>
-                                <p><a href="http://www.prepareforcanada.com/" title="http://www.prepareforcanada.com/" target="_blank">Prepare for Canada Website</a>
-                                </p>
-                                <p><a target="_blank" title="http://www.settlement.org" href="http://www.settlement.org">Information and Resources on Settlement in Ontario, Canada</a>&nbsp;- Settlement.org</p>
-                                <p><a href="http://www.youtube.com/user/immigroup/videos" title="http://www.youtube.com/user/immigroup/videos" target="_blank">How to fill out government forms</a>&nbsp;- Immigroup (English videos)</p>
-                                <p><a href="http://www.bridgetranslations.com/bridget/index.html" title="http://www.bridgetranslations.com/bridget/index.html" target="_blank">How to fill out government forms</a> - Bridget Translations (multilingual videos)</p>
-                                <h3>Employment&nbsp;</h3>
-                                <p><a title="http://www.ontarioimmigration.ca/en/working/OI_HOW_WORK_PROF_PROFS.html" href="http://www.ontarioimmigration.ca/en/working/OI_HOW_WORK_PROF_PROFS.html">Regulated Professions in Ontario</a>
-                                </p>
-                                <h3>Education&nbsp;</h3>
-                                <p><a title="http://www.ontario.ca/education-and-training/go-college-or-university-ontario" href="http://www.ontario.ca/education-and-training/go-college-or-university-ontario">Post-Secondary Education, Colleges and Universities
-                                </a>
-                                </p>
-                                <h3>Family Violence</h3>
-                                <p><a href="/system/resources/W1siZiIsIjIwMTcvMTAvMTMvMTMvMzIvMTkvOTMwL0ltcGFjdF9vZl9GYW1pbHlfVmlvbGVuY2Vfb25fQ2hpbGRyZW5fQnJvY2h1cmVfUnVzc2lhbl9PY3RfMjAxNy5wZGYiXV0/Impact%20of%20Family%20Violence%20on%20Children%20-%20Brochure_Russian_Oct%202017.pdf" title="Impact Of Family Violence On Children   Brochure Russian Oct 2017">Impact of Family Violence on Children</a>&nbsp;(Russian)</p>
-                                <p><a href="/system/resources/W1siZiIsIjIwMTcvMTAvMTYvMTIvNTcvMTcvMjI4L0ltcGFjdF9vZl9GYW1pbHlfVmlvbGVuY2Vfb25fQ2hpbGRyZW5fQnJvY2h1cmVfUG9saXNoX19PY3RvYmVyXzIwMTcucGRmIl1d/Impact%20of%20Family%20Violence%20on%20Children%20-%20Brochure_Polish_%20October%202017.pdf" title="Impact Of Family Violence On Children   Brochure Polish  October 2017">Impact of Family Violence on Children</a>&nbsp;(Polish)</p>
-                                <h3>Public Health</h3>
-                                <p><a href="http://talkaboutdrugs.ca " title="http://talkaboutdrugs.ca " target="_blank">Talk about drugs online parent modules</a>
-                                </p></div>
-                        
-                                </section>
-                        
-                            </section>
-                        
+                        <button class="collapsible">Service Canada Critical Service and Program</button>
+                        <div class="content">
+                            <p>
+                                <ol>
+                                    <a title="For individuals during COVID-19" href="/pdf_docs/ServiceCanada_ProgramsServicesforIndividuals-EN.PDF">For Individuals during COVID-19 &nbsp;</a> <br>
+                                    <a title="À l'intention des particuliers au cours de la COVID-19" href="/pdf_docs/ServiceCanada_ProgramsServicesforIndividuals-FR.PDF"> À l'intention des particuliers au cours de la COVID-19</a><br>
+                                    <a title="For employers, partners, stakeholders and unions during COVID-19" href="/pdf_docs/ServiceCanada_ProgramsServicesforEmployers-EN.PDF">For employers, partners, stakeholders and unions during COVID-19</a><br>
+                                    <a title="À l'intention des employeurs, partenaires, intervenants et syndicats au cours de la COVID-19" href="/pdf_docs/ServiceCanada_ProgramsServicesforEmployers-FR.PDF">À l'intention des employeurs, partenaires, intervenants et syndicats au cours de la COVID-19</a><br>
+                                </ol>
+                            </p>
                         </div>
-                    
+
+                        <button class="collapsible">Newcomer Information</button>
+                        <div class="content">
+                        <p>
+                            <ol> 
+                                <a title="Welcome To Canada Cic 2013" href="/pdf_docs/Welcome to Canada_CIC_2013.pdf">Welcome to Canada:  	What you should know.</a> Citizanship and immigration Canada-2013
+                                <a href="http://www.prepareforcanada.com/" 						title="http://www.prepareforcanada.com/" target="_blank">Prepare for Canada Website</a> <br>
+                                <a target="_blank" title="http://www.settlement.org" href="http://www.settlement.org">Information and Resources on Settlement in Ontario, Canada</a>&nbsp;- Settlement.org <br>
+                                <a href="http://www.youtube.com/user/immigroup/videos" title="http://www.youtube.com/user/immigroup/videos" target="_blank">How to fill out government forms</a>&nbsp;- Immigroup (English videos)
+                                
+                            </ol>
+                        </p>
+                        </div>
+
+                        <button class="collapsible">Employment </button>
+                        <div class="content">
+                            <p>
+                                <ol>
+                                    <a title="http://www.ontarioimmigration.ca/en/working/OI_HOW_WORK_PROF_PROFS.html" href="http://www.ontarioimmigration.ca/en/working/OI_HOW_WORK_PROF_PROFS.html">Regulated Professions in Ontario</a>&nbsp;               
+                                </ol>
+                            </p>
+                        </div>
+
+                        <button class="collapsible"> Education </button>
+                        <div class="content">
+                            <p><a title="http://www.ontario.ca/education-and-training/go-college-or-university-ontario" href="http://www.ontario.ca/education-and-training/go-college-or-university-ontario">Post-Secondary Education, Colleges and Universities</a>
+                            </p>
+                        </div>
+
+                        <button class="collapsible"> Family Violence</button>
+                        <div class="content">
+                            <p><a href="#" title="Impact Of Family Violence On Children   Brochure Russian Oct 2017">Impact of Family Violence on Children</a>&nbsp;(Russian)</p>
+                        <p><a href="#" title="Impact Of Family Violence On Children   Brochure Polish  October 2017">Impact of Family Violence on Children</a>&nbsp;(Polish)</p>
+                        </div>
+
+                        <button class="collapsible">Public Health</button>
+                        <div class="content">
+                            <p>
+                                <a href="http://talkaboutdrugs.ca" title="http://talkaboutdrugs.ca " target="_blank">Talk about drugs online parent modules</a>
+                            </p>
+                        </div>
+
+
+    </section>
+
+        <!-- <section>
+            <h3 id="newcomerInformation">Newcomer Information</h3>
+            <h3 id="groupInsurance">Group Insurance</h3>
+            <h3 id="employerJobPostings">Employer Job Postings</h3>
+            <h3 id="resources">Resources</h3>
+        </section> -->
+
     
-                    </div>
-                    
-
-                </div>
-                    
-
-            </div>
-        </div>
-
-            
- <!-- <section>
-    <h3 id="newcomerInformation">Newcomer Information</h3>
-    <h3 id="groupInsurance">Group Insurance</h3>
-    <h3 id="employerJobPostings">Employer Job Postings</h3>
-    <h3 id="resources">Resources</h3>
-</section> -->
-
-    
-    <!-- <section id="footer">
-    <footer class="footer">
+        <!-- <section id="footer">
+        <footer class="footer">
         <div class="footer-Content">
             <div class="section bout">
                 <h1 class="contactText">Contact Us</h1>
@@ -237,5 +268,23 @@
             </div>
         </div>
     </footer>
-    </body>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
+        
+</body>
 </html>
