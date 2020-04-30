@@ -6,7 +6,30 @@
     <title>Home - Polycultural Immigrant and Community Services</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-  
+    <link rel="stylesheet" href="swiper.min.css">
+    <style>
+        /* body {
+          background: #fff;
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          color:#000;
+          margin: 0;
+          padding: 0;
+        } */
+        .swiper-container {
+          background: #ddd;
+          width: 100%;
+          padding-top: 50px;
+          padding-bottom: 50px;
+        }
+        .swiper-slide {
+          background-position: center;
+          background-size: cover;
+          width: 300px;
+          height: 300px;
+    
+        }
+      </style>
 </head>
 
     <body id="home">
@@ -31,7 +54,7 @@
                     </ul>                
             </nav>
  </header>
- <section class="Services">
+ <!-- <section class="Services">
      <div class="first">
 <img src="training.jpg"class="resize" alt="">
 <img src="community.jpg" class="resize"alt="">
@@ -45,7 +68,55 @@
 <img src="newcomer.jpg" class="resize"alt="">
 <img src="employment.jpg" class="resize"alt="">
 </div>
- </section>
+ </section> -->
+ <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url(katie-moum-7XGtYefMXiQ-unsplash.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(perry-grone-lbLgFFlADrY-unsplash.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(jhon-david-3WgkTDw7XyE-unsplash.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(guillaume-jaillet-EIWCd0414xQ-unsplash.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(antenna-cw-cj_nFa14-unsplash.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(hermes-rivera-ahHn48-zKWo-unsplash.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(wellness.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(commissioner.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(newcomer.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(employment.jpg)"></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+    <!-- Swiper JS -->
+    <script src="swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows : true,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      });
+    </script>
+
+
+
+
+
+
+
+
+
+
  <section id="Sponsers">
     <div class="Sponsercontainer">
         <h2 class="m-heading text-center">
