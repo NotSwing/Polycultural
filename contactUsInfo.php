@@ -1,13 +1,16 @@
 <?php
-    $connect = mysql_connect("localhost","AdminName","Password");
-    if(!connect){
-        die('Connection Failed:'.mysql_error());
+    if(isset($_POST['email'])){
+        $destinationEmail = "msu-bdrost1@mcneese.edu";
+        $name = $_POST['Name'];
+        $email = $_POST['Email'];
+        $phone = $_POST['Phone'];
+        $message = $_POST['Message'];
+
+        mail($destinationEmail, "New Message from Contact Us", $message.'-'.$phone,"From: ".$email);
+        alert("Message Successfully Sent!");
     }
-    mysql_select_db("DatabaseName", $connect);
-    $userInfo="INSERT INTO 'table_name' ('Name','Phone','Email','Message') VALUES('$_POST[Name]','$_POST[Phone]','$_POST[Email]','$_POST[Message]'";
-    if(!mysql_query($userInfo,$connect)){
-        die('Connection Failed:'.mysql_error());
+    else{
+        alert("Something went wrong!");
     }
-    echo "Thank you for your message!";
-    mysql_close($connect);
+    
 ?>
